@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Создание заказа покупателя в 1С</title>
+</head>
+
+<body>
+
+    <!-- Открывает docs.google файл -->
+    <button class="button create-order" type="button">
+        <a target="_blank"
+            href="https://docs.google.com/document/d/1oLpopp-7KBM-_jXFTZTC_OTRmtTNO6Cf0tR82XDtqdU/edit?usp=sharing">
+            Создание нового заказа покупателя
+        </a>
+    </button>
+
+    <div class="vertical v-1"></div>
+    <div class="horizontal h-1"></div>
+
+    <div class="container">
+        <div class="variant container-center">
+            <p>Заказ клиента</p>
+        </div>
+        <div class="variant container-center">
+            <p>Заказ на выставку</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="block">
+            <div class="vertical v-2"></div>
+            <div class="horizontal h-2"></div>
+
+            <div class="container">
+                <div class="variant  container-left">
+                    <p>Клиент является владельцем карты лояльности или согласен стать владельцем карты лояльности</p>
+                </div>
+                <div class="variant  container-left">
+                    <p>Клиент отказывается называть номер телефона либо является юридическим лицом </p>
+                </div>
+            </div>
+
+            <div class="horizontal h-3"></div>
+        </div>
+        <div class="vertical v-9"></div>
+    </div>
+
+    <div>
+        <!-- Открывает pdf файл -->
+        <button onclick="window.open('MyPDF.pdf', '_blank');" type="button"> Актуализация/внесение
+            данных владельца карты</button>
+        <button onclick="window.open('MyPDF.pdf', '_blank');" type="button"> Добавление контрагента в
+            справочник контрагентов </button>
+        <button onclick="window.open('MyPDF.pdf', '_blank');" type="button"> Выбор контрагента
+            розничный покупатель </button>
+    </div>
+
+    <div class="container">
+        <div class="block">
+            <div>
+                <div class="horizontal h-4"></div>
+                <div class="horizontal h-5"></div>
+            </div>
+
+            <div class="vertical v-3"></div>
+
+            <button onclick="window.open('MyPDF.pdf', '_blank');" type="button">Проверка наличия в 1С
+                необходимой номенклатуры</button>
+
+            <div class="vertical v-4"></div>
+            <div class="horizontal h-6"></div>
+
+            <div class="container">
+                <div class="variant container-left">
+                    <p>Необходимая номенклатура есть в 1С</p>
+                </div>
+                <div class="variant container-left">
+                    <p>Необходимой номенклатуры нет в 1С</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="vertical v-10"></div>
+                <div class="block">
+                    <div class="vertical v-5"></div>
+
+                    <div>
+                        <button onclick="window.open('MyPDF.pdf', '_blank');" class="call-to-create"
+                            type="button"> Запрос на создание новой
+                            позиции в 1С</button>
+                    </div>
+
+                    <div class="horizontal h-7"></div>
+                </div>
+            </div>
+            <div class="vertical v-6"></div>
+
+            <div class="add-nomenclature">
+                <button onclick="window.open('MyPDF.pdf', '_blank');" type="button">Добавление
+                    необходимой номенклатуры в заказ</button>
+            </div>
+
+            <div class="vertical v-7"></div>
+        </div>
+        <div class="vertical v-11"></div>
+    </div>
+
+    <div>
+        <button onclick="window.open('MyPDF.pdf', '_blank');" class="marg"
+            type="button">Установка/проверка скидок</button>
+        <button onclick="window.open('MyPDF.pdf', '_blank');" class="marg" type="button">Установка
+            галки на выставку</button>
+    </div>
+
+    <div class="vertical v-8"></div>
+
+    <div>
+        <button onclick="window.open('MyPDF.pdf', '_blank');" class="last-operation"
+            type="button">Установка размещения</button>
+    </div>
+
+    <div class="vertical v-1"></div>
+
+    <div>
+        <button onclick="window.open('MyPDF.pdf', '_blank');" class="last-operation"
+            type="button">Установка ответственного</button>
+    </div>
+
+    <div class="vertical v-1"></div>
+
+    <button onclick="window.open('MyPDF.pdf', '_blank');" class="last-operation"
+        type="button">Проведение заказа</button>
+
+    <div class="total">
+        <p>Итог процесса:</p>
+        <ol>
+            <li>Заказ записан и проведен в 1С.</li>
+            <li>Товар, внесенный в заказ зарезервирован за покупателем в салоне и на центральном складе.
+                Данный резерв будет действовать в течение 2-х дней. Если в течение 2-х дней не поступит предоплата заказ
+                автоматически
+                закроется, товар вернется на свободный остаток.
+            </li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
